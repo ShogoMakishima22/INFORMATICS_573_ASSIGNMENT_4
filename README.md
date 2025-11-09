@@ -27,9 +27,9 @@
 
 ---
 
-## Project Overview
+## Overview
 
-This project implements a comprehensive DNA sequence analysis program in R that processes the chr1_GL383518v1_alt genomic sequence. The program demonstrates fundamental base R programming concepts including file I/O operations, string manipulation, data structure creation and manipulation, flow control using loops and conditionals, and robust error handling.
+This assignment implements a comprehensive DNA sequence analysis program in R that processes the chr1_GL383518v1_alt genomic sequence. The program demonstrates fundamental base R programming concepts including file I/O operations, string manipulation, data structure creation and manipulation, flow control using loops and conditionals, and robust error handling.
 
 The analysis performs four main tasks:
 1. Reading and extracting specific positions from the DNA sequence
