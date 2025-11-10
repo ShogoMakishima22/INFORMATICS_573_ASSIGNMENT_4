@@ -1,0 +1,14 @@
+DNA SEQUENCE ANALYSIS SUMMARY
+=============================
+
+File: chr1_GL383518v1_alt.fa 
+Date: 2025-11-09 21:55:59 
+Length: 182439 bases
+
+BASE COMPOSITION
+A: 47591 (26.09%)
+C: 43172 (23.66%)
+G: 42679 (23.39%)
+T: 48997 (26.86%)
+
+OVERALL GC CONTENT: 47.06 %
