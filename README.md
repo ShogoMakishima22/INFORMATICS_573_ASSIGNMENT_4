@@ -80,11 +80,11 @@ Demonstrate mastery of **base R commands**, file operations, and biological data
 ## 📁 Files in This Repository
 
 INFORMATICS_573/
-├── assignment4_dna_analysis.R # Main analysis script (final version)
-├── README.md # Project documentation
-├── chr1_GL383518v1_alt.fa # Input DNA sequence file (FASTA)
-├── nucleotide_analysis_results.csv # Output: nucleotide counts per kilobase
-└── analysis_summary.txt # Output: summary statistics and analysis notes
+assignment4_dna_analysis.R # Main analysis script (final version)
+README.md # Project documentation
+chr1_GL383518v1_alt.fa # Input DNA sequence file (FASTA)
+nucleotide_analysis_results.csv # Output: nucleotide counts per kilobase
+analysis_summary.txt # Output: summary statistics and analysis notes
 
 
 ---
