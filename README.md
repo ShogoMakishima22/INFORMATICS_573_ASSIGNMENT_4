@@ -123,7 +123,7 @@ INFORMATICS_573/
 - Exports results to CSV and text formats
 
 **README.md** (This File)
-- Complete project documentation
+- Complete assignment documentation
 - Installation and usage instructions
 - Detailed explanation of methodology
 - Troubleshooting guide
