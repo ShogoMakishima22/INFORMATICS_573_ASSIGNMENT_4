@@ -1,8 +1,8 @@
-- INFO-B B573: Assignment 4 – Basic R Commands
-- DNA Sequence Analysis Script Generator
-- Author: Venkatesh Joshi
-- Date: November 8, 2025
-- Due Date: November 9, 2025, 11:59 PM
+## INFO-B B573: Assignment 4 – Basic R Commands
+## DNA Sequence Analysis Script Generator
+## Author: Venkatesh Joshi
+## Date: November 8, 2025
+## Due Date: November 9, 2025, 11:59 PM
 
 TABLE OF CONTENTS
 -----------------
@@ -21,9 +21,9 @@ TABLE OF CONTENTS
 13. Contact Information
 
 
-===============================================================================
+# ===============================================================================
 1. OVERVIEW
-===============================================================================
+# ===============================================================================
 This assignment implements a self-contained R script generator that 
 automatically creates a complete DNA sequence analysis program named:
     assignment4_dna_analysis.R
