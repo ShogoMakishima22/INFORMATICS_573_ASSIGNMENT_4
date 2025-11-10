@@ -8,7 +8,7 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
+1. [Overview](#overview)
 2. [Purpose and Learning Objectives](#purpose-and-learning-objectives)
 3. [Skills Demonstrated](#skills-demonstrated)
 4. [Files in This Repository](#files-in-this-repository)
