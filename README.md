@@ -1,6 +1,6 @@
 # Assignment 4: Basic R Commands - DNA Sequence Analysis
 
-**Course:** INFO-B 473/B573 - Applied Programming for Biomedical Data Analysis  
+**Course:** INFO-B573 - Applied Programming for Biomedical Data Analysis  
 **Student:** Venkatesh Joshi  
 **Date:** 8th November 2025  
 **Due Date:** November 9, 2025, 11:59 PM
