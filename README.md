@@ -101,15 +101,15 @@ Demonstrate mastery of **base R commands**, file operations, and biological data
 All functions rely on **base R only**:
 
 ```r
-readLines(), substr(), chartr(), strsplit(),
-regmatches(), gregexpr(), data.frame(), rowSums(), write.csv()
+- readLines(), substr(), chartr(), strsplit(),
+- regmatches(), gregexpr(), data.frame(), rowSums(), write.csv()
 
-Input Data
+### Input Data
 
-FASTA format file containing a valid DNA sequence:
+- FASTA format file containing a valid DNA sequence:
 >chr1_GL383518v1_alt
 ATCGATCGATCGATCG...
-The file must include a header line (>) followed by sequence data.
+- The file must include a header line (>) followed by sequence data.
 
 🧩 Installation and Setup
 Step 1: Verify R Installation
@@ -120,11 +120,8 @@ mkdir -p /Users/venki/INFORMATICS_573
 cd /Users/venki/INFORMATICS_573
 
 Step 3: Place Required Files
-
 Place both files in your working directory:
-
 assignment4_dna_analysis.R
-
 chr1_GL383518v1_alt.fa
 
 Step 4: Verify File Access
@@ -150,148 +147,23 @@ source("assignment4_dna_analysis.R")
 Option 3 – From Command Line
 Rscript assignment4_dna_analysis.R /Users/venki/INFORMATICS_573 chr1_GL383518v1_alt.fa
 
-🧮 Program Structure and Functionality
-1️⃣ File and Environment Setup
-
-Validates directory path and FASTA filename.
-
-Normalizes paths across platforms.
-
-Uses tryCatch() for safe file operations.
-
-2️⃣ DNA Sequence Reading
-
-Function: read_dna_sequence(filename)
-
-Removes FASTA headers (>)
-
-Joins multi-line sequences
-
-Converts to uppercase
-
-Validates integrity and sequence length
-
-3️⃣ Reverse Complement Creation
-
-Function: create_reverse_complement(sequence)
-
-Complement conversion using
-
-chartr("ACGTN", "TGCAN", sequence)
 
 
-Reverses sequence order using rev(strsplit())
+### Error Handling and Robustness
+- Validates file existence and permissions
+- Detects malformed or empty FASTA files
+- Handles incomplete sequences gracefully
+- Provides clear, actionable error messages
+- Verifies kilobase totals and consistency
 
-Extracts:
+### Code Quality and Best Practices
+- Modular, function-based design
+- Section headers for readability
+- Vectorized operations for efficiency
+- Defensive coding via tryCatch()
+- Fully cross-platform
 
-79th base of reverse complement
-
-Bases 500–800 segment (301 bases)
-
-4️⃣ Nucleotide Frequency per Kilobase
-
-Function: count_nucleotides_per_kb(sequence)
-
-Splits sequence into 1000-base segments
-
-Counts A, C, G, T, and N bases
-
-Calculates GC content
-
-Returns list of counts per kilobase
-
-5️⃣ Data Frame Construction and Validation
-
-Function: create_nucleotide_dataframe(counts_list)
-
-Converts list into data frame
-
-Adds ACGT_Sum, GC_Percent, KB_Length
-
-Validates: ACGT_Sum + N == KB_Length
-
-Exports:
-
-nucleotide_analysis_results.csv
-
-analysis_summary.txt
-
-📊 Expected Output
-Sample Console Output (abridged)
-=======================================================
-READING DNA SEQUENCE
-✓ Successfully read sequence
-Total length: 128432 bases
-
-The 10th letter is: G
-The 758th letter is: A
-
-=======================================================
-CREATING REVERSE COMPLEMENT
-✓ Reverse complement created
-79th letter: T
-Letters 500–800: [301 bases total]
-
-=======================================================
-COUNTING NUCLEOTIDES PER KILOBASE
-✓ Created counts for 129 kilobases
-Note: 15 ambiguous bases (N) detected
-
-=======================================================
-DATA FRAME CREATION AND ANALYSIS
-All complete kilobases sum to 1000 bases.
-1 incomplete kilobase detected (length 432).
-Verification: ACGT_Sum + N = KB_Length → PASSED
-
-✓ Results exported:
-nucleotide_analysis_results.csv
-analysis_summary.txt
-
-🔬 Analysis Results and Interpretation
-Metric	Value
-Total length	128,432 bases
-Total kilobases analyzed	129 (128 full, 1 partial)
-Ambiguous bases (N)	15
-Overall GC content	~50.1%
-Observed Variations
-
-The final kilobase (KB 129) has fewer than 1000 bases → ACGT_Sum < 1000.
-
-GC content consistent (±0.8%), typical for human chromosome regions.
-
-Biological Implications
-
-Balanced A:T and G:C ratios indicate normal chromosomal sequence.
-
-High GC content suggests coding or regulatory regions.
-
-N bases represent sequencing ambiguity or assembly gaps.
-
-🧰 Error Handling and Robustness
-
-Validates file existence and permissions
-
-Detects malformed or empty FASTA files
-
-Handles incomplete sequences gracefully
-
-Provides clear, actionable error messages
-
-Verifies kilobase totals and consistency
-
-🧩 Code Quality and Best Practices
-
-Modular, function-based design
-
-Section headers for readability
-
-Vectorized operations for efficiency
-
-Defensive coding via tryCatch()
-
-Fully cross-platform
-
-Professional console formatting
+### Professional console formatting
 
 🧭 Troubleshooting Guide
 Issue	Possible Cause	Solution
@@ -299,10 +171,9 @@ Error: File not found	Wrong working directory	Use setwd() to correct path
 File contains only header line	Missing sequence data	Recheck FASTA file contents
 Cannot read file	Permission denied	Ensure read access
 Sequence too short	Truncated input	Use full genome FASTA file
+
 ✅ Testing and Verification
-
-Tested On:
-
+###Tested On:
 macOS 15.0.1 (R 4.4.0)
 
 Windows 11 (R 4.3.2)
