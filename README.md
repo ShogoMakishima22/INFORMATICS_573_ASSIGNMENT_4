@@ -3,7 +3,7 @@
 **Course:** INFO-B 473/B573 - Applied Programming for Biomedical Data Analysis  
 **Student:** Venkatesh Joshi  
 **Date:** 8th November 2025  
-**Due Date:** November 10, 2025, 11:59 PM
+**Due Date:** November 9, 2025, 11:59 PM
 
 ---
 
@@ -27,9 +27,9 @@
 
 ---
 
-## Project Overview
+## Overview
 
-This project implements a comprehensive DNA sequence analysis program in R that processes the chr1_GL383518v1_alt genomic sequence. The program performs four main analytical tasks:
+This assignment implements a comprehensive DNA sequence analysis program in R that processes the chr1_GL383518v1_alt genomic sequence. The program performs four main analytical tasks:
 
 1. **Sequence Reading and Extraction** - Reads FASTA format DNA sequences and extracts specific nucleotide positions
 2. **Reverse Complement Generation** - Creates the Watson-Crick-Franklin complementary strand in reverse orientation
