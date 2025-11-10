@@ -1056,8 +1056,8 @@ cat("Using default file:", default_filename, "\n")
 
 ### Best Practices Followed
 
-✅ **DRY Principle:** Don't Repeat Yourself - reusable functions  
-✅ **Fail Fast:** Validate inputs immediately  
-✅ **Clear Errors:** Informative error messages  
-✅ **Consistent Style:** Uniform formatting throughout  
-✅ **Professional Output:**
+ **DRY Principle:** Don't Repeat Yourself - reusable functions  
+ **Fail Fast:** Validate inputs immediately  
+ **Clear Errors:** Informative error messages  
+ **Consistent Style:** Uniform formatting throughout  
+ **Professional Output:**
